@@ -1,0 +1,379 @@
+/* varaible */
+:root {
+  --color-primary: #f36a3e;
+  --lh: 2rem;
+}
+/* Basic Styling */
+
+.universal__para {
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.heading__general {
+  display: block;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+/* animation */
+@keyframes slideIn {
+  from {
+    right: -70rem;
+  }
+  to {
+    right: 0rem;
+  }
+}
+
+/* header */
+.header {
+  background-color: var(--color-primary);
+  border-radius: 0 0 7rem 7rem;
+  height: max-content;
+  overflow: hidden;
+  width: 100%;
+}
+.header__container {
+  margin: 12rem 0 0 5rem;
+}
+.header__heading,
+.header__para,
+.header__heading--special {
+  color: white;
+}
+.header__heading--special,
+.special_text {
+  font-family: "Pacifico", Arial, Helvetica, sans-serif;
+}
+.header__heading {
+  margin-bottom: 4rem;
+}
+.header__heading {
+  font-family: "Josefin Sans", "Times New Roman", Times, serif;
+  font-size: 4rem;
+}
+.header__para {
+  margin-bottom: 7rem;
+}
+.header__para {
+  line-height: 1.6;
+}
+.header__heading--special {
+  font-size: 4rem;
+}
+.header__img {
+  height: 60rem;
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+@media screen and (min-width: 810px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 52% 20%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .header__container {
+    margin: 6rem 0 0 5rem;
+    display: grid;
+    grid-template-columns: 45% 20%;
+  }
+  .header__para {
+    margin-bottom: 7rem;
+    line-height: 1.2;
+  }
+  .header__img {
+    margin-top: 20rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0.5rem 0 2rem;
+  }
+  .header__img {
+    margin-top: 0.5rem;
+    height: 30rem;
+  }
+  .header__heading {
+    margin-bottom: 1rem;
+  }
+  .header__para {
+    margin-bottom: 3rem;
+  }
+  .header__heading--special {
+    font-size: 2rem;
+  }
+}
+
+/* overview */
+.overview {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin: 7rem 20rem;
+  margin-bottom: 7rem;
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 5rem;
+}
+.overview__heading {
+  text-align: center;
+}
+.overview__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.overview__expand {
+  -webkit-line-clamp: inherit;
+}
+
+.overview__para {
+  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-weight: 750;
+}
+.overview__btn {
+  background-color: var(--color-primary);
+  border-radius: 2rem;
+  color: #fff;
+  display: inline;
+  margin-top: 5px;
+  padding: 0.2rem 1rem;
+}
+@media screen and (max-width: 1080px) {
+  .overview {
+    margin: 7rem 5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .overview {
+    margin: 7rem 1rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* characters */
+.characters__heading {
+  text-align: center;
+}
+.characters__box {
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  margin: 1rem 2rem;
+  transform: skew(-2deg);
+}
+.characters__img {
+  height: 20rem;
+  width: 21rem;
+}
+.characters__name {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  margin: 0.5rem 4rem;
+}
+.cards__container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  margin: 5rem 0;
+}
+
+/* Anime Arcs */
+
+.arcs__heading {
+  text-align: center;
+}
+.arcs__container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-bottom: 4rem;
+}
+.arcs__container--heading {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-family: "Josefin Sans";
+}
+.arcs__names {
+  color: var(--color-primary);
+  font-family: Arimo;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+@media screen and (min-width: 1080px) {
+  .arcs__container {
+    margin-left: 8vw;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .arcs__container {
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .arcs__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .arcs__names {
+    font-size: 1.8rem;
+  }
+  .arcs__container--naruto_shippuden {
+    margin-top: 2rem;
+  }
+}
+
+/* Soundtracks */
+.soundtrack {
+  margin-top: 10rem;
+  padding-top: 2rem;
+  background-color: #121212;
+}
+.soundtrack__heading {
+  text-align: center;
+}
+.soundtrack__header,
+.soundtrack__detail {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 7rem;
+  font-family: Arimo;
+  font-size: 2.5rem;
+}
+.soundtrack__header {
+  font-family: Arimo;
+  font-weight: 700;
+}
+.soundtrack__detail {
+  padding: 1.3rem 0.5rem;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.linkToMusic {
+  text-decoration: none;
+  /* margin: 0 7rem; */
+}
+.soundtrack__detail:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+@media screen and (max-width: 830px) {
+  .soundtrack__header,
+  .soundtrack__detail {
+    margin: 0 6%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .soundtrack__header,
+  .soundtrack__detail {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .soundtrack__header,
+  .soundtrack__detail {
+    margin: 0 2px;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: var(--color-primary);
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  font-family: Pacifico;
+  color: #fff;
+}
+.footer__para {
+  text-align: center;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 740px) {
+  .footer__para {
+    font-size: 1.8rem;
+  }
+}
+
+/* Adding Functionality to Characters */
+.btn__character {
+  background-color: #2a2a2a;
+  border-radius: 2rem;
+  border: 2px dashed red;
+  color: #fff;
+  cursor: pointer;
+  display: inline;
+  font-family: Arimo;
+  font-size: 1.6rem;
+  margin: 5px 0 5px 50%;
+  padding: 0.2rem 1rem;
+  transform: translateX(-50%);
+}
+.Character__detailed {
+  background-color: var(--color-primary);
+  color: #fff;
+  height: 45rem;
+  left: 50%;
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  z-index: 7 !important;
+  box-shadow: 0px 0px 100px var(--color-primary);
+}
+.hidden {
+  display: none;
+}
+.closeWindow {
+  /* TODO: Get a low font-weight font for it */
+  background-color: white;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 0.5px 1.5px;
+  position: absolute;
+  right: 2%;
+  top: 0.5%;
+}
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(9px);
+  z-index: 2;
+}
+.overlayShow {
+  display: block;
+}
+.charcaters__detail--img {
+  height: 20rem;
+  width: 100%;
+}
+.characters__detailed--content {
+  margin-top: 0.2rem;
+}
+.character__detailed--list {
+  list-style: lower-roman;
+}
+.character__detailed--item {
+  font-size: 1.5rem;
+  font-family: Arimo;
+  padding: 0.7rem 0;
+}
