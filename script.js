@@ -29,7 +29,7 @@ for (let i = 0; i < openDetail.length; i++) {
     cardsContainer.style.overflow = "auto"
     document.body.style.overflow = "auto"
   }
-      
+      // test
   // Showing detail by clicking Btn
   openDetail[i].addEventListener("click", (e) => {
     detailedContainer[i].classList.remove("hidden");
